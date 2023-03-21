@@ -2,15 +2,20 @@
   height: 3rem;
   margin-left: 0.4rem;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
+.search label {
+
+    color: red;
+}
 .input {
+    width: 60%;
   border-radius: 30px;
   border: solid gray 1px;
   padding: 0.3rem;
   margin: 0 0.3rem;
-  color: rgb(88, 87, 87);
+  color: rgb(205, 203, 203);
 }
 
 .btn {

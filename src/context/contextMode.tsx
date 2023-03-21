@@ -22,6 +22,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     if (themeColor === "dark") {
       document.body.style.backgroundColor = "#FFF";
+     
     } else if (themeColor === "light") {
       document.body.style.backgroundColor = "#3c3c3c";
     }

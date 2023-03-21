@@ -1,8 +1,10 @@
 .container {
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20%;
+  /* background: #f14444; */
 }
 .link {
   padding: 0.3rem;

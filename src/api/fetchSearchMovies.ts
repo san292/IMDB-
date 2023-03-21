@@ -1,6 +1,5 @@
-import { ResultTrend} from "./../interface/api.d";
-
-export const fetchSerchMovies = async (query: string): Promise<ResultTrend> => {
+import { ResultTrend} from "../interface/api";
+ const fetchSearchMovies = async (query: string): Promise<ResultTrend> => {
   try {
     const response = await fetch(
       ` https://api.themoviedb.org/3/search/movie?api_key=${
@@ -15,3 +14,4 @@ export const fetchSerchMovies = async (query: string): Promise<ResultTrend> => {
     
   }
 };
+export default fetchSearchMovies

@@ -12,8 +12,7 @@ function ResultsTrending({results}:ResultTrendprops) {
  
   const location = useLocation();
   const trending = location.state;
-  console.log('location', location);
-  const showMovies= trending ? trending : results
+  const showMovies= results ? results : trending
   
 
   return (
