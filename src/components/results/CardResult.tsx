@@ -1,5 +1,6 @@
 import * as React from "react";
 import { ResultTrendprops } from "../../interface/api";
+import imdb from '../../assets/imdb.webp'
 
 import {
   CardMedia,
@@ -35,11 +36,11 @@ export default function CardResult({ results}: ResultTrendprops) {
   const voteToFixed=vote.toFixed(2)
 
   return (
-    <Card sx={{ width: 350, m: 0.4, fontSize: 16 }}>
+    <Card sx={{ width: 350, m: 0.4,p:.4, fontSize: 14 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[300], fontSize: 12, p:.3 }} aria-label="recipe">
-            {voteToFixed}/10
+          {voteToFixed}/10
           </Avatar>
         }
       />
@@ -47,7 +48,7 @@ export default function CardResult({ results}: ResultTrendprops) {
       <CardMedia
         component="img"
         height="194"
-        image={`https://image.tmdb.org/t/p/w300/${poster}`}
+        image={`https://image.tmdb.org/t/p/w300/${poster? poster :imdb}`}
         alt={title}
       />
       <CardContent>
