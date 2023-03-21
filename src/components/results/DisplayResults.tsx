@@ -5,7 +5,7 @@ import CardResult from "./CardResult";
 import { useLocation } from "react-router";
 import { ResultTrendprops } from "../../interface/api";
 
-function ResultsTrending({results}:ResultTrendprops) {
+function DisplayResults({results}:ResultTrendprops) {
    
     console.log('result movies', results);
     
@@ -33,4 +33,4 @@ function ResultsTrending({results}:ResultTrendprops) {
   );
 }
 
-export default ResultsTrending;
+export default DisplayResults;

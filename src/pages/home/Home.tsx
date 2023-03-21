@@ -1,6 +1,6 @@
-import { SetStateAction, useState } from "react";
+import {useState } from "react";
 import SearchForm from "../../components/Search/SearchForm";
-import ResultsTrending from "../../components/results/DisplayResults";
+import DisplayResults from "../../components/results/DisplayResults";
 import style from "./Home.module.css";
 import  fetchSearchMovies  from "../../api/fetchSearchMovies";
 
@@ -11,13 +11,13 @@ function Home() {
     setTimeout(async() => {
       setMovies(await fetchSearchMovies(inputValue));
       
-    }, 1000);
+    }, 1000)
   };
 
   return (
     <div className={style.home}>
       <SearchForm getMovies={getMovies} />
-      <ResultsTrending results={movies} />
+     {movies && <DisplayResults results={movies} />}
     </div>
   );
 }
