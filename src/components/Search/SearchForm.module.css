@@ -1,0 +1,28 @@
+.search {
+  height: 3rem;
+  margin-left: 0.4rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.input {
+  border-radius: 30px;
+  border: solid gray 1px;
+  padding: 0.3rem;
+  margin: 0 0.3rem;
+  color: rgb(88, 87, 87);
+}
+
+.btn {
+
+  border-radius: 30px;
+  border: solid gray 1px;
+  padding: 0.3rem;
+  background:linear-gradient(#e66465, #9198e5);
+  color: #fff
+}
+.btn:Hover{
+    color: rgb(4, 3, 3);
+
+
+}

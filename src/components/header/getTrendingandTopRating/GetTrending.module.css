@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+.link {
+  padding: 0.3rem;
+  background-color: #cfcaca;
+  border-radius: 30px;
+  border: 1px solid #cfcaca;
+  color: #f14444;
+  text-decoration: none;
+}

@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  background-color: #1a1919;
+  color: #fff;
+}
+.footer p{
+    font-weight: .4rem;
+    font-size: .9rem;
+}
+.span {
+  color: red;
+  margin-left: 1rem;
+}
